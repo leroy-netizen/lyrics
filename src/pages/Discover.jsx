@@ -9,7 +9,6 @@ const Discover = () => {
   const dipatch = useDispatch();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data, isFetching, error } = useGetTopChartsQuery();
-  console.log(data);
   const genreTitle = "  Hip-Hop";
 
   if (isFetching) {
